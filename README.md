@@ -1,26 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Modal component library
 
-## Available Scripts
+Modal component package
 
-In the project directory, you can run:
+## Author
 
-### `npm start`
+- [@AgathePlunian](https://github.com/AgathePlunian)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install using `npm i modal-lib-react-oc `
 
-### `npm run build`
+### Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In a React app, use the modal component:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`import { Modal } from 'modal-lib-react-oc'`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+Use class: `btn-modal` on trigger element to open modal
