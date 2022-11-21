@@ -1,0 +1,68 @@
+.modal-wrap {
+    display: none; 
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    background: white;
+    z-index: 1;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.37);
+}
+
+.modal-wrap.active {
+    display: block;
+}
+
+.modal-content {
+    position: relative;
+    padding: 20px 30px;
+}
+  
+.btn-close {
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-close:before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    display: block;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ZnLWljb24iIHN0eWxlPSJ3aWR0aDogMWVtOyBoZWlnaHQ6IDFlbTt2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO2ZpbGw6ICNGRkYgO292ZXJmbG93OiBoaWRkZW47IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTgxMC42NTk4NCAxNzAuNjU5ODRxMTguMzI5NiAwIDMwLjQ5NDcyIDEyLjE2NTEydDEyLjE2NTEyIDMwLjQ5NDcycTAgMTguMDAxOTItMTIuMzI4OTYgMzAuMzMwODhsLTI2OC42NzcxMiAyNjguMzI4OTYgMjY4LjY3NzEyIDI2OC4zMjg5NnExMi4zMjg5NiAxMi4zMjg5NiAxMi4zMjg5NiAzMC4zMzA4OCAwIDE4LjMyOTYtMTIuMTY1MTIgMzAuNDk0NzJ0LTMwLjQ5NDcyIDEyLjE2NTEycS0xOC4wMDE5MiAwLTMwLjMzMDg4LTEyLjMyODk2bC0yNjguMzI4OTYtMjY4LjY3NzEyLTI2OC4zMjg5NiAyNjguNjc3MTJxLTEyLjMyODk2IDEyLjMyODk2LTMwLjMzMDg4IDEyLjMyODk2LTE4LjMyOTYgMC0zMC40OTQ3Mi0xMi4xNjUxMnQtMTIuMTY1MTItMzAuNDk0NzJxMC0xOC4wMDE5MiAxMi4zMjg5Ni0zMC4zMzA4OGwyNjguNjc3MTItMjY4LjMyODk2LTI2OC42NzcxMi0yNjguMzI4OTZxLTEyLjMyODk2LTEyLjMyODk2LTEyLjMyODk2LTMwLjMzMDg4IDAtMTguMzI5NiAxMi4xNjUxMi0zMC40OTQ3MnQzMC40OTQ3Mi0xMi4xNjUxMnExOC4wMDE5MiAwIDMwLjMzMDg4IDEyLjMyODk2bDI2OC4zMjg5NiAyNjguNjc3MTIgMjY4LjMyODk2LTI2OC42NzcxMnExMi4zMjg5Ni0xMi4zMjg5NiAzMC4zMzA4OC0xMi4zMjg5NnoiICAvPjwvc3ZnPg==");
+}
+
+.btn-close:hover {
+    background-color: lighten(black, 20%);
+}
+
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.bg-modal {
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
