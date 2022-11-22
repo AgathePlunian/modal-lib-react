@@ -1,12 +1,14 @@
 import { Modal } from "./lib";
 
 function App() {
+
+  let title= "Thanks for subscribing !";
+  let content = "balbalablabal";
+
   return (
     <div className="App">
-
-      {/* Usage exemple */}
       <button type='button' className='btn-modal'>Save</button>
-      <Modal></Modal>
+      <Modal title={title} content={content}></Modal>
     </div>
   );
 }

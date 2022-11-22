@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './styles/modal.css';
 
 
-function Modal() { 
+function Modal({title , content}) { 
       
     useEffect(() => {
         let btnOpenModal = document.getElementsByClassName('btn-modal')[0];
@@ -35,12 +35,12 @@ function Modal() {
         }
     }
 
-
     return (
         <div className="modal-wrap">
             <div className="modal-content">
                 <button type="button" className="btn-close" onClick={closeModal}></button>
-                <div id="confirmation" className="modal-text">Employee Created!</div>
+                {title ? <h1 className="modal-title">{title}</h1> : ""}
+                {content ? <div className="modal-text">{content}</div> : ""}
             </div>
         </div>
     )
