@@ -2,8 +2,8 @@ import { Modal } from "./lib";
 
 function App() {
 
-  let title= "Thanks for subscribing !";
-  let content = "balbalablabal";
+  let title= "Hello !";
+  let content = "Thanks for subscribing !";
 
   return (
     <div className="App">
